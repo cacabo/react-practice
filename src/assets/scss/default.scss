@@ -1,3 +1,17 @@
+// GENERAL
 body {
+  background: white;
+}
+
+.space {
+  display: block;
+  height: 2rem;
+  width: 100%;
+}
+
+// FOOTER
+footer {
+  padding: 2rem 0;
   background: black;
+  color: white;
 }
