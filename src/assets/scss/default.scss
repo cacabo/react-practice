@@ -9,6 +9,38 @@ body {
   width: 100%;
 }
 
+// NAVIGATION
+.navbar {
+  height: 54px;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+  nav {
+    ul {
+      margin: 0;
+      margin-left: 2rem;
+      padding: 0;
+      list-style: none;
+      display: inline-block;
+      vertical-align: middle;
+
+      li {
+        float: left;
+        margin-left: 1rem;
+
+        a {
+          display: block;
+          height: 54px;
+          line-height: 40px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
 // FOOTER
 footer {
   padding: 2rem 0;

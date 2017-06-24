@@ -1,39 +1,36 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
 
+// Components
+import Nav from './components/header/nav';
+import Footer from './components/footer/footer';
+import Home from './components/pages/home';
+import About from './components/pages/about';
+
+// Assets
+import './assets/css/default.min.css';
+
+// Appication
 class App extends Component {
-
   render() {
     return (
       <div className="app" >
-        <div className="app-header"></div>
-        <div className="app-wrapper">
-          <div className="app-nav">
-            <div className="nav screen1">
-              <p>Screen 1</p>
-            </div>
-            <div className="nav screen2">
-              <p>Screen 2</p>
-            </div>
-            <div className="nav screen3">
-              <p>Screen 3</p>
-            </div>
+        <Nav />
 
-          </div>
-          <div className="main-content">
-            {this.props.children}
-          </div>
+        <div className="pageWrapper">
+          <div className="space"></div>
+          <Home />
+          <div className="space"></div>
         </div>
+
+        <Footer />
       </div>
     )
   }
 }
-
-ReactDOM.render(
-  <App>
-    <h1>This is a message</h1>
-  </App>,
-  document.getElementById('root')
-);
 
 export default App;

@@ -8,6 +8,11 @@
   },
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-changed": "^3.1.0",
+    "gulp-clean-css": "^3.4.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
     "react-scripts": "1.0.7"
   },
   "scripts": {
@@ -15,5 +20,20 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccabo1/react-practice.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Cameron Cabo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ccabo1/react-practice/issues"
+  },
+  "homepage": "https://github.com/ccabo1/react-practice#readme"
 }
