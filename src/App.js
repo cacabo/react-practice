@@ -18,17 +18,20 @@ import './assets/css/default.min.css';
 class App extends Component {
   render() {
     return (
-      <div className="app" >
-        <Nav />
+      <Router>
+        <div className="app" >
+          <Nav />
 
-        <div className="pageWrapper">
-          <div className="space"></div>
-          <Home />
-          <div className="space"></div>
+          <div className="pageWrapper">
+            <div className="space"></div>
+            <Route exact path='/' component={Home} />
+            <Route exact path='/about' component={About} />
+            <div className="space"></div>
+          </div>
+
+          <Footer />
         </div>
-
-        <Footer />
-      </div>
+      </Router>
     )
   }
 }
