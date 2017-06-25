@@ -11,6 +11,9 @@ class Footer extends Component {
               <p>
                 Here is some content for the footer where I talk about this website and what its purpose is.
               </p>
+              <p>
+                Created by <a href="http://cameroncabo.com" target='_blank'>Cameron Cabo.</a>
+              </p>
             </div>
           </div>
         </div>
