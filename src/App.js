@@ -8,6 +8,7 @@ import {
 // Components
 import Nav from './components/header/nav';
 import Footer from './components/footer/footer';
+import PageContainer from './components/pages/pageContainer';
 import Home from './components/pages/home';
 import About from './components/pages/about';
 import Form from './components/pages/form';
@@ -23,15 +24,11 @@ class App extends Component {
         <div className="app" >
           <Nav />
 
-          <div className="pageWrapper">
-            <div className="space"></div>
-
+          <PageContainer>
             <Route exact path='/' component={Home} />
             <Route exact path='/about' component={About} />
             <Route exact path='/form' component={Form} />
-            
-            <div className="space"></div>
-          </div>
+          </PageContainer>
 
           <Footer />
         </div>
