@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import FormText from '../form/formText';
 
 class Form extends Component {
   constructor(props) {
@@ -53,9 +54,7 @@ class Form extends Component {
                   </div>
 
                   <div className="col-12 col-md-6">
-                    <p>
-                      Hi there{" " + this.state.name}! Hope you are having a good time. It seems to me your email is{ " " + this.state.email}.
-                    </p>
+                    <FormText name={this.state.name} email={this.state.email} />
                   </div>
                 </div>
               </div>
