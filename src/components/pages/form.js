@@ -31,6 +31,20 @@ class Form extends Component {
   }
 
   render() {
+    const nameGroup = (
+      <div className="form-group">
+        <label>Name</label>
+        <input type="text" className="form-control" onChange={this.handleNameChange} value={this.state.name} />
+      </div>
+    );
+
+    const emailGroup = (
+      <div className="form-group">
+        <label>Email</label>
+        <input type="email" className="form-control" onChange={this.handleEmailChange} value={this.state.email} />
+      </div>
+    );
+
     return (
       <div className="card-block">
         <h1 className="card-title text-muted">
@@ -40,16 +54,8 @@ class Form extends Component {
         <div className="row">
           <div className="col-12 col-md-6">
             <form>
-
-              <div className="form-group">
-                <label>Name</label>
-                <input type="text" className="form-control" onChange={this.handleNameChange} value={this.state.name} />
-              </div>
-
-              <div className="form-group">
-                <label>Email</label>
-                <input type="email" className="form-control" onChange={this.handleEmailChange} value={this.state.email} />
-              </div>
+              {nameGroup}
+              {emailGroup}
 
               <button type="submit" className="btn btn-outline-primary" onClick={this.handleSubmit}>Submit</button>
             </form>
