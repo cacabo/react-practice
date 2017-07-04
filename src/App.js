@@ -10,6 +10,7 @@ import Nav from './components/header/nav';
 import Footer from './components/footer/footer';
 import Home from './components/pages/home';
 import About from './components/pages/about';
+import Form from './components/pages/form';
 
 // Assets
 import './assets/css/default.min.css';
@@ -24,8 +25,11 @@ class App extends Component {
 
           <div className="pageWrapper">
             <div className="space"></div>
+
             <Route exact path='/' component={Home} />
             <Route exact path='/about' component={About} />
+            <Route exact path='/form' component={Form} />
+            
             <div className="space"></div>
           </div>
 
