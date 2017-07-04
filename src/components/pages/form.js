@@ -25,6 +25,11 @@ class Form extends Component {
     });
   }
 
+  handleSubmit(e) {
+    e.preventDefault();
+    alert('Form submitted');
+  }
+
   render() {
     return (
       <div className="container">
@@ -49,7 +54,7 @@ class Form extends Component {
                         <input type="email" className="form-control" onChange={this.handleEmailChange} />
                       </div>
 
-                      <button type="submit" className="btn btn-outline-primary">Submit</button>
+                      <button type="submit" className="btn btn-outline-primary" onClick={this.handleSubmit}>Submit</button>
                     </form>
                   </div>
 
